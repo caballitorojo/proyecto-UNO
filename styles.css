@@ -1,0 +1,12 @@
+*
+body{
+  .special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;  }
+  }
+
+  @font-face {
+    font-family: "Special Elite";
+    src: url("assets/SpecialElite-Regular.ttf") format("truetype");
+  }
