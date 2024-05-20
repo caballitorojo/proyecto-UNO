@@ -1,9 +1,17 @@
+@import "https://fonts.googleapis.com/css2?family=Special+Elite&display=swap";
+
+@font-face {
+  font-family: "Special Elite";
+  src: url("assets/SpecialElite-Regular.ttf") format("truetype");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/*
 html {
   font-size: 1rem;
   height: 100%;
@@ -14,26 +22,32 @@ body, header, main, footer {
   min-height: 50px;
   margin: 0.5rem;
   min-width: 400px;
-}
+} */
 
-body {
-  background-image: url(imagenes/fondo\ \(2\).jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: specialelite, 'Courier New', Georgia, monospace;
-}
 
 header {
+  width: 100%;
+ /* height: 100vh;*/
   background-color: black;
-  box-shadow: 0 0 0.5rem  rgb(83, 78, 76 /50%);
+ /* box-shadow: 0 0 0.5rem  rgb(83, 78, 76 /50%);*/
 }
 
-.header-logo {
+.nav{
+width: 100%;
+height:100px;
+background: #0e0b0b;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 25px;
+}
+
+.logo {
   width: auto;
   display: inline-block;
 }
-
-.header-menubar {
+/*
+.nav {
   left: auto;
   position: relative;
   top: auto;
@@ -43,77 +57,182 @@ header {
   border: 5px red solid;
   justify-content:right ;
 }
+*/
 
-.header-menubar ul {
-  list-style: none;
+.menu{
+  display: flex;
 }
 
-.header-menubar li {
+
+.menu li {
+  list-style: none;
+  margin: 70px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+
+  /*
   font-weight: 700;
   padding: 1rem;
   margin-right: 2rem;
   background-color: black;
   font-size: 1.3rem;
   /*float HACE Q LOS ELEMENTOS NO SE COMPORTEN 'EN BLOQUE' dejan de estar uno debajo del otro
-  */
+  
   float: right;
   /*ext-align: right;*/
-}
+  }
 
-.header-menubar a {
+.menu li a{
   text-decoration: none;
   color: aliceblue;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+  padding: 30px 10px;
+  background: #7438ac;
+  color: black;
+  border-radius: 15px;
 }
 
 
+
+body {
+  font-family: Special+Elite, 'Courier New', Georgia, monospace;
+  min-height: 100vw;
+  }
+
 main {
-  min-height: 200px;
+  min-height: 250px;
   overflow: auto;
 }
 
-main>div {
-  border: 2px greenyellow solid;
-  min-height: 180px;
-  margin: 0.5rem;
-  height: auto;
-  float: left;
-  width: 80%;
-}
 
-/*
+main > div {
+  width: 100%;
+  margin: 0.5rem;
+  height: 3em;
+  float: left;
+  }
+
+main > section {
+
+}  
+
+  #titulo-genero {
+    /*display: inline-block;*/
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    border: 3px rgb(34, 203, 245) solid;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler;
+    font-weight: 500;
+    word-spacing: 10px;
+    }  
+
+/*#texto{
+  display: inline-block;
+  vertical-align: top;
+  padding: 3rem;
+  text-align: justify;
+}
 main>article img {
  float: left;
 }
 */
 
-main>article {
-  border: 20 px magenta solid;
+.genero {
+  display: grid;
+  grid-template-rows: repeat(5 1fr);
 }
 
-main>p {
-  font-stretch: semi-expanded;
-  font-weight: 700;
-  /*no funciona el margin left- ver con div o section*/
-  padding: 10px;
-  padding-left: 10px;
-  text-align: justify;
+
+article {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
 }
 
-#texto{
-  display: inline-block;
-  vertical-align: top;
-  padding: 3rem;
-  text-align: justify;
+.libro1{
+  background-color:#E7DFDD;
+}
+.libro2{
+  background-color: #0E0816;
+  color: rgb(197, 206, 214);
+}
+.libro3{
+  background-color:#E7DFDD;
+}
+.libro4{
+background-color:#0E0816;
+color: aliceblue;
+}
+.libro5{
+  background-color: #E7DFDD;
 }
 
 img {
   float: left;
   width: ;
   height: ;
-  padding: 3rem;
-
+  padding: 2rem;
 }
 
+h2 {
+  font-size: 200%;
+  font-family: 'Special+Elite', Georgia;  
+}
+
+h3 {
+ font-size:150% ;
+ font-family: 'Special+Elite', Georgia;  
+ }
+
+
+p {
+  font-weight: 500;
+  font-family: Cambria, Georgia;  
+    /*no funciona el margin left- ver con div o section*/
+
+  font-size: 130%;
+  text-align: justify;
+  padding: 50px 50px 30px 35px;
+}
+
+button {
+  font-size: 150%;
+  }
+
+  .button_slide {
+    color: #413e3e;
+    border: 3px solid rgb(52, 8, 154);
+    border-radius: 10px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: Impact, 'Arial Narrow Bold';
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #3415ae;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+
+  .slide_diagonal:hover {
+      box-shadow: inset 400px 50px 0 0 #D80286;
+  }
+
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+/*
 main>aside {
   border: 2px blue solid;
   min-height: 180px;
@@ -121,23 +240,47 @@ main>aside {
   margin: 0.5rem;
   float: right;
   width: auto;
-}
+} */
 
-.secciones {ou
+.secciones {
   border: 2px grey solid;
   min-height: 50px;
   margin: 0.5rem;
 }
 
-.secciones article {
+.article {
   border: 2px purple solid;
   margin: 0.5rem;
-  min-height: 20px;
+  /*min-height: 20px;*/
 }
 
-#titulo-genero {
-  border: 2px red solid;
-  font-family: specialelite, 'Courier New', Georgia, monospace;
-  text-align: center;
-  word-spacing: 10px;
-}
+.libro1 {
+  border: #7438ac solid;
+}  
+
+
+
+
+.grid-container > * {
+  box-shadow: 10px 7px 37px -13px rgba (51 51 51 0.73);
+  }
+
+  .grid-container{
+    display: grid;
+    gap: 20px;
+    grid-template:
+     "logo"
+     "menu"
+     "titulo-genero"
+     "libro1"
+     "libro2"
+     "libro3"
+     "libro4"
+     "libro5"
+     "footer";
+
+
+     .header{
+      grid-area: header;
+     }
+  }
