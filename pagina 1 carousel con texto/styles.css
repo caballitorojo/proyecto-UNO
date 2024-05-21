@@ -1,0 +1,71 @@
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.foto1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/2dragon.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+
+  .textoENfoto1 {
+    color: rgb(242, 236, 236);
+    text-align: center;
+    text-decoration: solid;
+    width: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    position: relative;
+    top: 50px;  
+  }
+
+.foto2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/3cciaficc.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.textoENfoto2 {
+  color: rgb(242, 236, 236);
+  text-align: center;
+  text-decoration: solid;
+  width: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  position: relative;
+  top: 100px;  
+  left: 400px;
+}
+
+
+.foto3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/4realismo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.textoENfoto3 {
+  color: rgb(100, 130, 206);
+  text-align: center;
+  text-decoration: solid;
+  width: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  position: relative;
+  top: 250px;  
+
+  }
