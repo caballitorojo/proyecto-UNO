@@ -11,25 +11,10 @@
   box-sizing: border-box;
 }
 
-/*
-html {
-  font-size: 1rem;
-  height: 100%;
-}
-
-body, header, main, footer {
-  border: 3px black solid;
-  min-height: 50px;
-  margin: 0.5rem;
-  min-width: 400px;
-} */
-
 
 header {
   width: 100%;
- /* height: 100vh;*/
   background-color: black;
- /* box-shadow: 0 0 0.5rem  rgb(83, 78, 76 /50%);*/
 }
 
 .nav{
@@ -46,18 +31,6 @@ padding: 25px;
   width: auto;
   display: inline-block;
 }
-/*
-.nav {
-  left: auto;
-  position: relative;
-  top: auto;
-  width: auto;
-  display: inline-block;
-  margin: 1rem;
-  border: 5px red solid;
-  justify-content:right ;
-}
-*/
 
 .menu{
   display: flex;
@@ -68,18 +41,7 @@ padding: 25px;
   list-style: none;
   margin: 70px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-
-  /*
-  font-weight: 700;
-  padding: 1rem;
-  margin-right: 2rem;
-  background-color: black;
-  font-size: 1.3rem;
-  /*float HACE Q LOS ELEMENTOS NO SE COMPORTEN 'EN BLOQUE' dejan de estar uno debajo del otro
-  
-  float: right;
-  /*ext-align: right;*/
-  }
+ }
 
 .menu li a{
   text-decoration: none;
@@ -95,12 +57,10 @@ padding: 25px;
   border-radius: 15px;
 }
 
-
-
 body {
   font-family: Special+Elite, 'Courier New', Georgia, monospace;
   min-height: 100vw;
-  }
+}
 
 main {
   min-height: 250px;
@@ -113,14 +73,13 @@ main > div {
   margin: 0.5rem;
   height: 3em;
   float: left;
-  }
+}
 
 main > section {
 
 }  
 
   #titulo-genero {
-    /*display: inline-block;*/
     display: grid;
     place-items: center;
     width: 100vw;
@@ -133,22 +92,11 @@ main > section {
     word-spacing: 10px;
     }  
 
-/*#texto{
-  display: inline-block;
-  vertical-align: top;
-  padding: 3rem;
-  text-align: justify;
-}
-main>article img {
- float: left;
-}
-*/
 
 .genero {
   display: grid;
-  grid-template-rows: repeat(5 1fr);
+  grid-template-rows: repeat(4 1fr);
 }
-
 
 article {
   text-align: center;
@@ -170,9 +118,6 @@ article {
 background-color:#0E0816;
 color: aliceblue;
 }
-.libro5{
-  background-color: #E7DFDD;
-}
 
 img {
   float: left;
@@ -191,23 +136,21 @@ h3 {
  font-family: 'Special+Elite', Georgia;  
  }
 
-
 p {
   font-weight: 500;
   font-family: Cambria, Georgia;  
-    /*no funciona el margin left- ver con div o section*/
-
   font-size: 130%;
   text-align: justify;
   padding: 50px 50px 30px 35px;
 }
 
+
 button {
   font-size: 150%;
-  }
+}
 
   .button_slide {
-    color: #413e3e;
+    color: #5f5a5a;
     border: 3px solid rgb(52, 8, 154);
     border-radius: 10px;
     padding: 18px 36px;
@@ -224,7 +167,7 @@ button {
   }
 
   .slide_diagonal:hover {
-      box-shadow: inset 400px 50px 0 0 #D80286;
+      box-shadow: inset 400px 50px 0 0 #0b76cd;
   }
 
   #outer {
@@ -232,15 +175,7 @@ button {
     margin: 50px auto 0 auto;
     text-align: center;
   }
-/*
-main>aside {
-  border: 2px blue solid;
-  min-height: 180px;
-  min-width: 15%;
-  margin: 0.5rem;
-  float: right;
-  width: auto;
-} */
+
 
 .secciones {
   border: 2px grey solid;
@@ -251,19 +186,21 @@ main>aside {
 .article {
   border: 2px purple solid;
   margin: 0.5rem;
-  /*min-height: 20px;*/
 }
 
-.libro1 {
-  border: #7438ac solid;
-}  
 
 
+footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
 
 
+/* RESPONSIVE */
 .grid-container > * {
   box-shadow: 10px 7px 37px -13px rgba (51 51 51 0.73);
-  }
+}
 
   .grid-container{
     display: grid;
@@ -276,7 +213,6 @@ main>aside {
      "libro2"
      "libro3"
      "libro4"
-     "libro5"
      "footer";
 
 
