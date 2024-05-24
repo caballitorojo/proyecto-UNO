@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libreria Macondo</title>
-  <link rel="stylesheet" href="styles.css">
-  <style> .div class {<link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-               link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">} </style>
+  <link rel="icon" href="../Imagenes/icono2.ico">
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <nav class="nav">
+      <div class="logo"><a href="index.html"><img src="../Imagenes/logoMacondo.png" alt="libreria-macondo"></a></div>
+      <ul class="menu">
+        <li><a href="registrarse.html">Registrarse</a></li>
+        <li><a href="iniciarSesion.html">Iniciar sesión</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-
-  <div class="foto1">
-    <div class="textoENfoto1">
-      <h1 style="color: rgb(226, 242, 245);">Literatura Fantastica </style></h1>
-        <p>Un mundo donde lo imposible se convierte en realidad <br>
-          Sagas epicas, relecturas de la mitologia, leyendas y cuentos de hadas, libros que proponen un viaje <br>
-          a lugares inquietantes, maravillosos o simplemente unicos. La magia te espera</p>
+  <main>
+    <div class="carousel">
+      <!-- Slide 1 -->
+      <div class="slide slide1">
+        <div class="content">
+          <h1>Literatura Fantástica</h1>
+          <p>Descubre un mundo de fantasía y aventuras</p>
+          <a href="genero-fantastico.html" class="button">Explorar</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide slide2">
+        <div class="content">
+          <h1>Ciencia Ficción</h1>
+          <p>Sumérgete en mundos futuristas y tecnologías avanzadas</p>
+          <a href="genero-ciencia-ficcion.html" class="button">Explorar</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide slide3">
+        <div class="content">
+          <h1>Realismo Mágico</h1>
+          <p>Explora realidades misteriosas y mágicas</p>
+          <a href="realismo-magico.html" class="button">Explorar</a>
+        </div>
+      </div>
     </div>
-  </div>
+  </main>
 
-  <div class="foto2">
-    <div class="textoENfoto2">
-      <h1>Ciencia Ficcion</h1>
-        <p> Criaturas extrañas, tecnologías asombrosas, mundos inimaginables. <br> 
-          Conoce la amplia variedad de titulos y autores disponibles <br>
-          Clasicos del genero, distopias, ucronias, cyberpunk, space opera y mas alla...</p>
-    </div>
-  </div>
-
-  <div class="foto3">
-    <div class="textoENfoto3">
-      <h1>Realismo Magico</h1>
-        <p> Cuando lo extraño y peculiar atraviesa lo cotidiano, la realidad se vuelve inesperada y sin embargo tan familiar como los sueños. <br>
-          Encontra desde autores del boom latinoamericano a clasicos como Murakami o Rushdie, junto a nuevas reediciones y los ultimos lanzamientos.</p>
-    </div>
-  </div>
-  
+  <footer class="footer">
+    <button onclick="window.location.href='index.html'">Regresar</button>
+  </footer>
 </body>
-</html> 
+</html>
