@@ -1,56 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libreria Macondo</title>
-  <link rel="icon" href="../Imagenes/icono2.ico">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <div class="logo"><a href="index.html"><img src="../Imagenes/logoMacondo.png" alt="libreria-macondo"></a></div>
-      <ul class="menu">
-        <li><a href="registrarse.html">Registrarse</a></li>
-        <li><a href="iniciarSesion.html">Iniciar sesión</a></li>
-        <li><a href="carrito.html">Carrito</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="carousel">
-      <!-- Slide 1 -->
-      <div class="slide slide1">
-        <div class="content">
-          <h1>Literatura Fantástica</h1>
-          <p>Descubre un mundo de fantasía y aventuras</p>
-          <a href="genero-fantastico.html" class="button">Explorar</a>
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="slide slide2">
-        <div class="content">
-          <h1>Ciencia Ficción</h1>
-          <p>Sumérgete en mundos futuristas y tecnologías avanzadas</p>
-          <a href="genero-ciencia-ficcion.html" class="button">Explorar</a>
-        </div>
-      </div>
-      <!-- Slide 3 -->
-      <div class="slide slide3">
-        <div class="content">
-          <h1>Realismo Mágico</h1>
-          <p>Explora realidades misteriosas y mágicas</p>
-          <a href="realismo-magico.html" class="button">Explorar</a>
-        </div>
+  <div class="carousel">
+    <div class="slide foto1">
+      <div class="textoENfoto1">
+        <h1>Literatura Fantástica</h1>
+        <p>Un mundo donde lo imposible se convierte en realidad. Sagas épicas, relecturas de la mitología, leyendas y cuentos de hadas. La magia te espera.</p>
       </div>
     </div>
-  </main>
-
-  <footer class="footer">
-    <button onclick="window.location.href='index.html'">Regresar</button>
-  </footer>
+    <div class="slide foto2">
+      <div class="textoENfoto2">
+        <h1>Ciencia Ficción</h1>
+        <p>Criaturas extrañas, tecnologías asombrosas, mundos inimaginables. Conoce la amplia variedad de títulos y autores disponibles.</p>
+      </div>
+    </div>
+    <div class="slide foto3">
+      <div class="textoENfoto3">
+        <h1>Realismo Mágico</h1>
+        <p>Cuando lo extraño atraviesa lo cotidiano, la realidad se vuelve inesperada y familiar. Descubre autores del boom latinoamericano y más.</p>
+      </div>
+    </div>
+  </div>
+  <script src="carousel.js"></script>
 </body>
 </html>
